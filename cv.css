@@ -1,100 +1,52 @@
-
-
-body
-{
+body {
     font-size: medium;
-}
-
-body
-{
     font-family: Georgia, Arial, Impact;
 }
 
-body
-{
-    color:black;
-    margin: 0%;
-    background-color:rgb(41, 41, 41);
-    background-image: url("test.jpg");
-    background-repeat: no-repeat;
-    background-size:cover
-    
-    
-}
-
-
-
-
-
-
-body{
+body {
     font-family: Avenir, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     text-align: justify;
     box-sizing: border-box;
+    background: #282828; /* Modification de la couleur de fond */
 }
-body{
-    background: #ededed;
-}
-p{
+
+p {
     font-size: 1em;
     line-height: 1.5em;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
 
-/*HEADER et FOOTER*/
+header {
+    border-bottom: 2px solid #282828
 
-header, footer{
-    width: 100%;
-    padding: 20px 0px;
-    background: url("https://lh3.googleusercontent.com/113XeS12KOVEDci4koLvoE-LFHlcHNB2tGwjlCausI2oYYl3-WFSF1IjajovRYQY4Q=s1280") #4f4f4f;
-    box-shadow: 0px 0px 15px #333;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-size: 700%;
-    color: rgb(255, 255, 255);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    
-  
-}
-header{
-    border-bottom: 2px solid #fff;
-    height: 570px;
 }
 
+footer {
+    border-top: 2px solid #282828   ;
+}
 
+/* Le reste de votre CSS reste inchangé. */
 
-footer{
-    border-top: 2px solid #fff;
-}
-footer p{
-    width: 90%;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-}
-footer a{
-    color: #fff;
-}
 
 /*SECTIONS*/
-section{
-    display: flex; 
+/*SECTIONS*/
+section {
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+    margin: 20px auto; /* Ajout de marges pour séparer les sections */
+    box-shadow: 0px 0px 10px #313030;
+    background-color: #404040;
+    color: white;
     padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbb;
-    background-color: #fff;
+    padding-top: 20px;
 }
 
 section h2{
@@ -104,6 +56,10 @@ section h2{
 section > div{
     width: 90%;
 }
+
+ section:first-child {
+    padding-top: 80px; /* Ajustez cette valeur selon votre préférence */
+}   
 
 
 .photo{
@@ -126,8 +82,7 @@ section > div{
     padding: 10px;
     margin: 10px auto 30px auto;
     color: #fff;
-    background-color: rgb(58, 74, 255);
-    box-shadow: 0px 0px 10px #ccc;
+    background-color: #4B8;
     border-radius: 5px;
 }
 .contact-flex{
@@ -230,6 +185,13 @@ section > div{
     border-radius: 5px;
 }
 
+
+.c111{
+    width: 90%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+
 .comp2{
     display: flex;
     flex-flow: row wrap;
@@ -262,7 +224,6 @@ section > div{
 @media screen and (min-width: 980px){
     section{
         width: 80%;
-        box-shadow: 0px 0px 10px #bbb;
     }
     a:hover{
         color: #EA0;
@@ -308,33 +269,34 @@ section > div{
 
 
 
+/* Annulation des styles de Bootstrap */
+body {
+    background-color: #282828 !important; /* Remplacez par votre couleur de fond souhaitée */
+}
 
 
+/* Annulation du style par défaut de Bootstrap pour la navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important; 
+
+}
 
 
+/* Styles pour personnaliser les cartes */
+.card-custom {
+    background-color: #333; /* Couleur de fond sombre */
+    color: #fff; /* Texte en blanc */
+    border: 1px solid #ffffff00; /* Bordure blanche */
+}
 
+.card-custom .btn {
+    background-color: #4B8; /* Couleur de fond du bouton */
+    color: #fff; /* Texte du bouton en blanc */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card-custom .btn:hover {
+    background-color: rgb(33, 106, 74); /* Couleur de fond du bouton au survol */
+}
 
 
 

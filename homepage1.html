@@ -4,29 +4,43 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    
 </head>
-<body>
+
     <header>
-   
-    <p>Arthur Litschig </p> 
-
-    <div class="center-con">
-
-        <div class="round">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-      
-
-  
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="homepage1.html">Acceuil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="arthur.litschig.cv.pdf">Mon CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projet.html">Mes projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="veille.html   ">Ma veille technologique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="homepage1.html#competences">Mes compétences</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+
+    <body>  
     
     <section>
         <div class="prez">
             <h2>Qui suis-je ?</h2>
-            <p>Je me présente, je m'appelle Arthur, j'ai 21 ans et je suis actuellement étudiant en première année de BTS informatique en spécialité SLAM. Je suis à la recherche d'un stage de cinq semaines afin de valider mon année et d'approfondir mes connaissances et mes compétences.</p>
+            <p>Je me présente, je m'appelle Arthur, j'ai 22 ans et je suis actuellement étudiant en deuxième année de BTS informatique en spécialité SLAM. Je suis à la recherche d'un stage de cinq semaines afin de valider mon BTS et d'approfondir mes connaissances et mes compétences.</p>
             <a href="arthur_litschig_cv.pdf" download>Télécharger mon CV</a>
             <a href="lettre_motivation_ Arthur _Litschig.pdf" download> Ma Lettre de motivation</a>
         </div>
@@ -111,14 +125,13 @@
         <div class="prez">
             <h2>Le campus Saint Aspais</h2>
             <a href="https://institutionsaintaspais.fr/campus/" download>Lien vers le site du campus</a>
-            </div>
+            
     </section>
     
-    <section>
-        <h2>Compétences</h2>
-        <h3 class="h3gauche">Professionnelles</h3>
+    <section id="competences">
+        <h2>Compétences Professionnelles</h2>
         <div class="comp">
-            <p>HTML / CSS</p>
+            <p>HTML / CSS  <i class="bi bi-file-html"></i></p>
             <div class="conteneur-barre"><span class="barre c100"></span></div>
         </div>
         <div class="comp">
@@ -126,7 +139,15 @@
             <div class="conteneur-barre"><span class="barre c95"></span></div>
         </div>
         <div class="comp">
-            <p>Word / Excel / PowerPoint</p>
+            <p>JavaScript</p>
+            <div class="conteneur-barre"><span class="barre c111"></span></div>
+        </div>
+        <div class="comp">
+            <p>React</p>
+            <div class="conteneur-barre"><span class="barre c111"></span></div>
+        </div>
+        <div class="comp">
+            <p>Python</p>
             <div class="conteneur-barre"><span class="barre c110"></span></div>
         </div>
         <h3 class="h3gauche">Personnelles</h3>
@@ -153,14 +174,10 @@
     </section>
     
     <section>
-        <h2>Centres d'intérêst</h2>
+        <h2>Centres d'intérêts</h2>
         <figure class="interet">
             <img src="https://www.aquaportail.com/pictures1206/aquarium.jpg" alt="Aquariophilie">
             <figcaption>Aquariophilie</figcaption>
-        </figure>
-        <figure class="interet">
-            <img src="https://focus.telerama.fr/967x550/100/2021/03/29/4cab2490-c83c-4a30-bb48-c6946c9901c3.jpg" alt="Anime">
-            <figcaption>Anime</figcaption>
         </figure>
         <figure class="interet">
             <img src="https://cdn.gamekult.com/images/news/30/3050851383/enquete-comment-la-donnee-a-bouleverse-la-creation-de-jeux-video-2a4b16c2.jpg" alt="Gaming">
